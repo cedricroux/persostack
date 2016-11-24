@@ -76,6 +76,10 @@
 	}
 }
 
+.col-1 about homepage_content {
+	border: 1px solid black;
+}
+
 
 
 
@@ -113,6 +117,18 @@ h3 {
 .wrapper {
 	width: 100%;
 	margin: 0 auto;
+	border: 1px solid black;
+	border-radius: 10px;
+	.col-1 {
+		border: 1px solid black;
+	}
+	.col-2 {
+		border: 1px solid black;
+	}
+	.col-3 {
+		border: 1px solid black;
+	}
+
 }
 
 .skinny_wrapper {

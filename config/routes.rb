@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get 'tweets/destroy'
   post 'articles/index'
   post 'tweets/index'
+  get 'links/index'
 
   resources :tags
   resources :comments
