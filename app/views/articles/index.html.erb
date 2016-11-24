@@ -1,0 +1,22 @@
+<h1>Articles Search</h1>
+<h3>Find out the 10 latest articles from the news sources below</h3>
+
+<div id="checkboxes">
+  <ul>
+    <span><input type='checkbox' id="abcCheckbox" value="abc-news-au">ABC</span>
+    <span><input type="checkbox" id="bbcCheckbox" value="bbc-news">BBC</span>
+    <span><input type="checkbox" id="bloombergcheckbox" value="bloomberg">Bloomberg</span>
+    <span><input type="checkbox" id="buzzfeedCheckbox" value="buzzfeed">Buzzfeed</span>
+    <span><input type="checkbox" id="ftCheckbox" value="financial-times">Financial Times</span>
+    <span><input type="checkbox" id="recodeCheckbox" value="recode">recode</span>
+    <span><input type="checkbox" id="teCheckbox" value="the-economist">The Economist</span>
+    <span><input type="checkbox" id="tvCheckbox" value="the-verge">The Verge</span>
+  </ul>
+</div>
+<div id="articleB">
+<%= form_tag '#', :id => 'articleSearchB' do %>
+  <%= button_tag 'Search' %>
+<% end %>
+</div>
+
+<div id="articlesFeed"></div>

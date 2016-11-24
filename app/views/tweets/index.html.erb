@@ -1,0 +1,27 @@
+<h1>Tweets#index</h1>
+<p>Find me in app/views/tweets/index.html.erb</p>
+
+
+<%= form_tag '#', :id => 'searchTweet' do %>
+  <%= search_field_tag :tweetQ, nil, :placeholder => 'Keyword', :autofocus => true %>
+  <%= button_tag 'Search' %>
+<% end %>
+
+<div id="tweetsFeed"></div>
+
+
+<ul class="search-box">
+  <%= form_tag(tweets_new_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :tag, params[:tag], placeholder: " Search Tweet", class: "searchText" %>
+    <%= submit_tag "Search", :name => nil, :class => "searchSubmit" %>
+
+  <% end %>
+</ul>
+
+
+
+<ul class='tweets'>
+  <% @twitter_results.each do |tweet| %>
+    <li><%= tweet.text %></li>
+  <% end %>
+</ul>
